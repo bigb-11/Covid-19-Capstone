@@ -16,3 +16,20 @@ Tasks & Deliverables
 
 ## Getting Started with EDA:
 I coverted the downloaded dataset to csv, and uploaded to SQL Server to create a database.  Using SQL queries, I created multiple tables to help me understand the relationships in and among the data points.
+
+Some of the queries I used are below:
+* https://github.com/bigb-11/Covid-19-Capstone/blob/main/Select%201st%20admission%20window.sql - This one selects the first window where a patient was admitted to ICU
+* https://github.com/bigb-11/Covid-19-Capstone/blob/main/No%20bloodwork%20but%20admitted.sql - This one shows patients who were admitted with no bloodwork taken during that window; I did the same for Vitals; but then I created tables of No Bloodwork and No Vitals, and added an ICU column so that I could filter between non-/admitted patients.
+* https://github.com/bigb-11/Covid-19-Capstone/blob/main/Create%20Disease_Present%20Tables.sql - I created tables to show the distributions of the diseases for each patient.  I also queried for patients with multiple diseases, but ended up not using the table (https://github.com/bigb-11/Covid-19-Capstone/blob/main/Select%20Disease1%20plus%20Another.sql).
+
+In PowerBI, the first four pages are dedicated to my EDA, where the first four pages are Patient Demographics, First ICU Admission Window, a Patient Profile, and Distribution of those null values (bloodwork and vital signs taken).
+
+### Model Development in VS Code
+The 5 models used:
+* Logistic Regression - A simple linear model for binary classification that estimates the probability that a given input belongs to a certain class.
+* Decision Tree Classifier - Non-linear model that splits the data based on feature values, easy to interpret but can overfit.
+* Random Forest - An ensemble of decision trees, reducing overfitting by averaging multiple trees.
+* Support Vector Machines - Finds optimal hyperplane that maximizes the margin between classes.
+* Naive Bayes - Based on Bayes' Theorem with the assumption of feature independence.
+
+The most promising of these was Logistic Regression with a consistent accuracy score of 97%.
