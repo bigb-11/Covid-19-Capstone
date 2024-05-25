@@ -24,7 +24,7 @@ Some of the queries I used are below:
 
 In PowerBI, the first four pages are dedicated to my EDA, where the first four pages are Patient Demographics, First ICU Admission Window, a Patient Profile, and Distribution of those null values (bloodwork and vital signs taken).
 
-### Model Development in VS Code
+## Model Development in VS Code
 The 5 models used:
 * Logistic Regression - A simple linear model for binary classification that estimates the probability that a given input belongs to a certain class.
 * Decision Tree Classifier - Non-linear model that splits the data based on feature values, easy to interpret but can overfit.
@@ -33,3 +33,6 @@ The 5 models used:
 * Naive Bayes - Based on Bayes' Theorem with the assumption of feature independence.
 
 The most promising of these was Logistic Regression with a consistent accuracy score of 97%.
+
+## ML Visuals
+The cleaned data was exported to a .csv file and loaded into PowerBI.  From that data, I created the last 2 visuals in the PBIX file (pages: ML Visuals - 1, and ML Visuals - 2).
